@@ -38,3 +38,23 @@ function afficherLesServices()
         }
     );
 }
+function Exo2()
+{
+    //alert("xx");
+    $.ajax
+    (
+        {
+            type:"get",
+            url:"PHP/interface.php",
+            success:function(interfacetext)
+            {
+                $('#divInterface').empty();
+                $('#divInterface').append(interfacetext);
+            },
+            error:function()
+            {
+                alert("Erreur lors de la récupération de l'interface.");
+            }
+        }
+    );
+}
