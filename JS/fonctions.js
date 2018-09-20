@@ -61,3 +61,25 @@ function Exo2()
         }
     );
 }
+function ExoDeals()
+{
+    alert("xx");
+    /*$.ajax
+    (
+        {
+            type:"get",
+            url:"PHP/interface.php",
+            success:function(interfacetext)
+            {
+                $('#divCategories').empty();
+                $('#divServices').empty();
+                $('#divInterface').empty();
+                $('#divInterface').append(interfacetext);
+            },
+            error:function()
+            {
+                alert("Erreur lors de la récupération de l'interface.");
+            }
+        }
+    );*/
+}
