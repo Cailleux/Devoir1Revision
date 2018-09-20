@@ -63,23 +63,22 @@ function Exo2()
 }
 function ExoDeals()
 {
-    alert("xx");
-    /*$.ajax
+    //alert("xx");
+    $.ajax
     (
         {
             type:"get",
-            url:"PHP/interface.php",
-            success:function(interfacetext)
+            url:"PHP/getLesDeals.php",
+            data:"id="+$('#lstDeals').val(),
+            success:function(data2)
             {
-                $('#divCategories').empty();
-                $('#divServices').empty();
-                $('#divInterface').empty();
-                $('#divInterface').append(interfacetext);
+                $('#divDeals').empty();
+                $('#divDeals').append(data2);
             },
             error:function()
             {
-                alert("Erreur lors de la récupération de l'interface.");
+                alert("Erreur lors de la récupération des deals.");
             }
         }
-    );*/
+    );
 }
