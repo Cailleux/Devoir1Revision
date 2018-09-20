@@ -8,7 +8,8 @@ function Exo1()
             url:"PHP/getLesCategories.php",
             success:function(data)
             {
-                $('#divCategories').empty(); //-> On vide la div
+                $('#divCategories').empty();
+                $('#divInterface').empty();
                 $('#divCategories').append(data);
             },
             error:function()
@@ -28,7 +29,7 @@ function afficherLesServices()
             data:"id="+$('#lstCategories').val(),
             success:function(data)
             {
-                $('#divServices').empty(); //-> On vide la div
+                $('#divServices').empty();
                 $('#divServices').append(data);
             },
             error:function()
@@ -48,6 +49,8 @@ function Exo2()
             url:"PHP/interface.php",
             success:function(interfacetext)
             {
+                $('#divCategories').empty();
+                $('#divServices').empty();
                 $('#divInterface').empty();
                 $('#divInterface').append(interfacetext);
             },
