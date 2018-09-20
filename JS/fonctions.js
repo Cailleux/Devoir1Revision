@@ -18,28 +18,23 @@ function Exo1()
         }
     );
 }
-function Exo2()
-{
-    //alert("lol2");
-
-}
-/*function afficherLesServices()
+function afficherLesServices()
 {
     $.ajax
     (
         {
             type:"get",
-            url:"PHP/getLesFormations.php",
-            data:"id="+$('#lstActivites').val(),
+            url:"PHP/getLesServices.php",
+            data:"id="+$('#lstCategories').val(),
             success:function(data)
             {
-                $('#divFormations').empty(); //-> On vide la div
-                $('#divFormations').append(data);
+                $('#divServices').empty(); //-> On vide la div
+                $('#divServices').append(data);
             },
             error:function()
             {
-                alert("Erreur lors de la récupération des formations.");
+                alert("Erreur lors de la récupération des services.");
             }
         }
     );
-}*/
+}
